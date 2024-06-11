@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Sure, here's a basic template for your README file:
 
-## Getting Started
+---
 
-First, run the development server:
+# Co-working Space Booking System
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is a Co-working Space Booking System with Membership Tiers and Discounts. It allows users to book desks for specified time periods, with different membership tiers and pricing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Desk Booking**: Users can book individual or team desks for specified time periods.
+- **Membership Tiers**: Basic, Premium, and Executive membership tiers with corresponding pricing.
+- **Discounts**: Users booking for more than 3 hours receive a 10% discount on the total amount.
+- **Revenue Tracking**: The system tracks revenue collected over a certain period, categorized by membership tiers.
+- **Dashboard**: Optionally, a dashboard can be displayed showing total revenue collected and breakdown by membership tiers.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Frontend Components
 
-## Learn More
+- **Desk**: Displays individual desks and allows users to book them.
+- **BookingForm**: Allows users to select a desk and book it for a specified time period.
+- **MembershipTier**: Displays membership tiers and their corresponding pricing.
+- **BookingSummary**: Shows a summary of the booking details and total amount.
+- **Discounts**: Displays any applicable discounts based on booking duration.
 
-To learn more about Next.js, take a look at the following resources:
+## API Endpoints
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **/api/desks**: Handles fetching available desks and booking.
+- **/api/book**: Handles booking desk(s) for specified time periods.
+- **/api/revenue**: Provides revenue tracking and breakdown by membership tiers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Setup
 
-## Deploy on Vercel
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/bl4ck4ndbr0wn/Co-working-Space-Booking-System.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install Dependencies**:
+   ```bash
+   cd coworking-space-booking-system
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Run the Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Access the Application**:
+   Open your browser and go to [http://localhost:3000](http://localhost:3000) to access the application.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
